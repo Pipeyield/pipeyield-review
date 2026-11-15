@@ -1,0 +1,14 @@
+{
+  "name": "pipeyield-review",
+  "displayName": "Pipeyield search-term review",
+  "version": "0.1.0",
+  "description": "A free Google Ads search-term review by Pipeyield: see how much of your Search spend went to searches that look off-target, and the top searches with their spend. You upload the report on Pipeyield's page; it never goes through the chat.",
+  "author": {
+    "name": "Pipeyield",
+    "url": "https://pipeyield.com"
+  },
+  "homepage": "https://pipeyield.com",
+  "privacyPolicyUrl": "https://pipeyield.com/privacy",
+  "termsOfServiceUrl": "https://pipeyield.com/terms",
+  "keywords": ["google-ads", "search-terms", "ppc", "marketing"]
+}

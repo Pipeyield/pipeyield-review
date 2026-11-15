@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pipeyield": {
+      "type": "http",
+      "url": "https://app.pipeyield.com/mcp"
+    }
+  }
+}
