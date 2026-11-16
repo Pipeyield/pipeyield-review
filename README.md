@@ -28,7 +28,7 @@ One export from Google Ads: **Campaigns → Insights and reports → Search term
 
 ## Two ways to run it
 1. **In the browser, no install:** https://pipeyield.com/review?utm_source=github&utm_medium=repo
-2. **In Claude:** The Claude plugin is launching soon; run the same review in your browser above.
+2. **From inside Claude, with this plugin:** in Claude Code (2.1.275 or later), run `/plugin install pipeyield-review --marketplace Pipeyield/pipeyield-review`, or `/plugin marketplace add Pipeyield/pipeyield-review` and then `/plugin install pipeyield-review@pipeyield`. On claude.ai or the Claude desktop app, open Settings → Connectors → Add custom connector, name it `Pipeyield` and enter `https://app.pipeyield.com/mcp` (no sign-in). Then ask Claude to review your search terms; it gives you an upload link (it works for 24 hours) to upload the file on pipeyield.com (so every number is parsed exactly) and shows the result in the chat.
 
 ## What you get
 - **The number:** about how much a month goes to searches you can exclude, with the clicks and conversions they got in your file.
@@ -46,6 +46,7 @@ It reads the words people searched and the clicks and conversions in your file. 
 ## Your data
 - The file is uploaded to our server over HTTPS and reviewed there. This repo holds only the plugin client, which never connects to your Google Ads account.
 - The file and its review are deleted within 24 hours, or within 7 days if you ask us to email the review. If you ask us to email you the review, your email address is kept with it for those 7 days. Data is stored in Germany (AWS Frankfurt); search terms are labelled with an AI model from Anthropic, as listed in the privacy policy: https://pipeyield.com/privacy
+- The review's AI step uses Anthropic's Claude on text only: the search terms, campaign names and keywords, plus where you sell if you type it, never spend or other figures. Anthropic never uses it for training, and keeps it for up to 30 days for safety checks only, then deletes it.
 - Only upload data you're allowed to share. Search terms can contain names typed by searchers.
 
 ## Every week, for client accounts (paid)
