@@ -9,7 +9,7 @@
     {
       "name": "pipeyield-review",
       "source": "./",
-      "description": "A free Google Ads search-term review by Pipeyield, inside Claude."
+      "description": "A free Google Ads search-term review by Pipeyield: the searches to exclude, each with its reason, and negatives ready to paste. You upload the report on Pipeyield's page; it never goes through the chat."
     }
   ]
 }
