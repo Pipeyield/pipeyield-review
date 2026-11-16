@@ -48,7 +48,7 @@ The server has two tools:
 
 - **Your report goes only to Pipeyield's page.** You upload it in your browser, on pipeyield.com, behind a robot check. It never goes through the chat, and the tools don't accept files or search terms.
 - **The chat gets the finished review.** Claude receives the same review the page shows you, including your top searches and their spend, so it can show it to you. What Claude does with chat content is covered by your Claude plan's terms.
-- **Pipeyield keeps the file and the review for 24 hours**, or 7 days if you ask us to email the review, then deletes them. Pipeyield's privacy notice: https://pipeyield.com/privacy
+- **Pipeyield keeps the file and the review for 24 hours**, or 7 days if you ask us to email the review, then deletes them. An email address you give on the review page is kept with them for that time. Pipeyield's privacy notice: https://pipeyield.com/privacy
 - **Nothing about you is needed.** No sign-in and no email to see the review. Each link is a random code that works for 24 hours.
 
 ## Questions

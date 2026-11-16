@@ -8,6 +8,8 @@
     "url": "https://pipeyield.com"
   },
   "homepage": "https://pipeyield.com",
+  "repository": "https://github.com/Pipeyield/pipeyield-review",
+  "license": "MIT",
   "privacyPolicyUrl": "https://pipeyield.com/privacy",
   "termsOfServiceUrl": "https://pipeyield.com/terms",
   "keywords": ["google-ads", "search-terms", "ppc", "marketing"]
