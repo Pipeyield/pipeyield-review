@@ -12,5 +12,7 @@
   "license": "MIT",
   "privacyPolicyUrl": "https://pipeyield.com/privacy",
   "termsOfServiceUrl": "https://pipeyield.com/terms",
+  "supportUrl": "mailto:hello@pipeyield.com",
+  "documentationUrl": "https://github.com/Pipeyield/pipeyield-review#readme",
   "keywords": ["google-ads", "search-terms", "ppc", "marketing"]
 }
