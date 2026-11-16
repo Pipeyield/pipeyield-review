@@ -1,32 +1,55 @@
-# Pipeyield search-term review for Claude
+# Pipeyield: free Google Ads search-term review
 
-Get Pipeyield's free Google Ads search-term review without leaving Claude (launching soon). Ask for a review, open the link Claude gives you, upload your Google Ads search terms report on Pipeyield's page, and the result comes back into the chat:
+Upload one Google Ads search terms export. Every search you could exclude comes with its reason, so you can check it against the calls you've already made. Nothing changes in your account until you add the negatives yourself: you approve every change.
 
-- what the account sells, read from its own campaigns and keywords, and the buyer terms it protects
-- the searches to exclude, with their spend a month and the reason for each
-- the searches to check by hand, and the buyer terms to keep
-- a negatives file for Google Ads Editor, from the review page
+You also get one number first: **about how much a month goes to searches you can exclude**.
 
-Your top 500 searches by spend are reviewed; the review says how many smaller ones weren't. It reads the words people searched and the clicks and conversions in your file. It can't see who became a customer, so check any high-spend row before you exclude it.
+Free, no signup, 3 reviews a month per Google Ads account.
 
-## Launching soon
+> Example below: our sample review of a made-up HR and payroll software account that sells in the United States (the same one as pipeyield.com/review/sample).
 
-The Claude plugin and connector aren't switched on yet, so there's nothing to install today. Until they are, run the same free review in your browser: https://pipeyield.com/review?utm_source=github&utm_medium=repo (no signup, 3 reviews a month per Google Ads account). Watch this repo for the release.
+```
+About $2,150 a month goes to 75 searches you can exclude:
+people after a different product, people looking for another
+company and job seekers.
+296 clicks, 0 conversions · 18% of the spend reviewed
+68 negatives cover all 75 searches.
 
-## How it will work
+[payroll funding company]              exact                       $207 a month
+[payroll direct deposit not received]  exact                       $140 a month
+[payroll software uk]                  exact                       $131 a month
+"jobs"                                 phrase  covers 5 searches   $126 a month
 
-The server has two tools:
+None of these block your 15 keywords or 134 buyer searches.
+```
 
-- `start_review` makes a one-time link to Pipeyield's review page. The link works for 24 hours.
-- `get_review` answers with the state of that review: waiting for the upload, still working, the finished review, or expired.
+## What you need
+One export from Google Ads: **Campaigns → Insights and reports → Search terms**, the last 30–90 days, downloaded as CSV (Excel works too). Include the Cost column, and add the Keyword column so every negative is also checked against the keywords you bid on. Conversions help, but aren't required. Tip: fill in "Where does this business sell?" on the upload page. Searches from places it doesn't sell to can then be excluded.
 
-## What data goes where
+## Two ways to run it
+1. **In the browser, no install:** https://pipeyield.com/review?utm_source=github&utm_medium=repo
+2. **In Claude:** The Claude plugin is launching soon; run the same review in your browser above.
 
-- **Your report goes only to Pipeyield's page.** You upload it in your browser, on pipeyield.com, behind a robot check. It never goes through the chat, and the tools don't accept files or search terms.
-- **The chat gets the finished review.** Claude receives the same review the page shows you, including your top searches and their spend, so it can show it to you. What Claude does with chat content is covered by your Claude plan's terms.
-- **Pipeyield keeps the file and the review for 24 hours**, or 7 days if you ask us to email the review, then deletes them. An email address you give on the review page is kept with them for that time. Pipeyield's privacy notice: https://pipeyield.com/privacy
-- **Nothing about you is needed.** No sign-in and no email to see the review. Each link is a random code that works for 24 hours.
+## What you get
+- **The number:** about how much a month goes to searches you can exclude, with the clicks and conversions they got in your file.
+- **Root negatives with match type:** when one word covers several searches, you get the word as a phrase-match negative (`"jobs"` covers 5 searches in the example) instead of a line per search. Single odd searches come as exact match.
+- **A reason for every search,** in plain words: `Wants payroll financing, not payroll software.` When one word covers several searches, the reason quotes it: `Looking for a job, not a supplier ("jobs").`
+- **A conflict check:** every negative is checked against the buyer searches in your file and, when your export has the Keyword column, the keywords you bid on. A negative that would block one is left out and shown to you instead.
+- **Buyers to keep:** searches that look like your buyers. We never suggest excluding them.
+- **Check by hand:** searches held back for safety (they converted, name a brand, or match a keyword you bid on) and searches the words alone can't decide. If your export keeps Google's Added/Excluded column, the review leaves out what you've already excluded and never puts what you've added as a keyword in exclude.
+- **The download:** a CSV for Google Ads Editor, or copy the list and paste it into a negative keyword list (Tools → Shared library → Exclusion lists → Negative keyword lists). Filter by campaign when the file has several.
+- **A business profile you can correct:** what the account sells and where it sells, and the review re-runs with your correction.
 
-## Questions
+## What it can't tell you
+It reads the words people searched and the clicks and conversions in your file. It can't see who became a customer, so check any high-spend row before you exclude it. Nothing changes in your Google Ads account until you add the negatives yourself.
 
-Email hello@pipeyield.com.
+## Your data
+- The file is uploaded to our server over HTTPS and reviewed there. This repo holds only the plugin client, which never connects to your Google Ads account.
+- The file and its review are deleted within 24 hours, or within 7 days if you ask us to email the review; an email address you give on the review page is kept with them for that time. Data is stored in Germany (AWS Frankfurt); search terms are labelled with an AI model from Anthropic, as listed in the privacy policy: https://pipeyield.com/privacy
+- Only upload data you're allowed to share. Search terms can contain names typed by searchers.
+
+## Every week, for client accounts (paid)
+Next week, only the new searches: the ones you've excluded or kept don't come back. A short Google Ads script, added once in your manager account or in each account (about 10 minutes), collects the data automatically. The weekly plan covers up to 10 Google Ads accounts and costs $199 a month. Our first 10 customers pay $149 a month, locked for 12 months while they stay subscribed. Tax included. More than 10? Email us. Weekly reviews are opening soon, with a 14-day free trial, no card.
+
+## License and feedback
+License: MIT (see [LICENSE](LICENSE)). Issues welcome here, or hello@pipeyield.com.
