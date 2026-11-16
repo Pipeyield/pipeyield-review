@@ -28,7 +28,7 @@ One export from Google Ads: **Campaigns → Insights and reports → Search term
 
 ## Two ways to run it
 1. **In the browser, no install:** https://pipeyield.com/review?utm_source=github&utm_medium=repo
-2. **From inside Claude, with this plugin:** in Claude Code (2.1.275 or later), run `/plugin install pipeyield-review --marketplace Pipeyield/pipeyield-review`, or `/plugin marketplace add Pipeyield/pipeyield-review` and then `/plugin install pipeyield-review@pipeyield`. On claude.ai or the Claude desktop app, open Settings → Connectors → Add custom connector, name it `Pipeyield` and enter `https://app.pipeyield.com/mcp` (no sign-in). Then ask Claude to review your search terms; it gives you an upload link (it works for 24 hours) to upload the file on pipeyield.com (so every number is parsed exactly) and shows the result in the chat.
+2. **From inside Claude, with this plugin:** in Claude Code (2.1.275 or later), run `/plugin install pipeyield-review --marketplace Pipeyield/pipeyield-review`, or `/plugin marketplace add Pipeyield/pipeyield-review` and then `/plugin install pipeyield-review@pipeyield`. On claude.ai or the Claude desktop app, open Settings → Connectors → Add custom connector, name it `Pipeyield` and enter `https://app.pipeyield.com/mcp` (no sign-in). Then ask Claude to review your search terms; it gives you an upload link (it works for 24 hours) to upload the file on pipeyield.com (so every number is parsed exactly) and shows the result in the chat. Results may end with one line about Pipeyield's paid weekly plan.
 
 ## What you get
 - **The number:** about how much a month goes to searches you can exclude, with the clicks and conversions they got in your file.
