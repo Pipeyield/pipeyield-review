@@ -5,7 +5,7 @@ description: Runs Pipeyield's free Google Ads search-term review. Use when the u
 
 # Google Ads search-term review
 
-Pipeyield reads a Google Ads search terms report and sorts the searches with the most spend into exclude, watch and keep, each with its spend and a reason, plus a negatives file on the review page. The report is uploaded on Pipeyield's page, never in this chat.
+Pipeyield reads a Google Ads search terms report and sorts the searches with the most spend into exclude, keep and check by hand, each with its spend and a reason, and builds the list of negatives to add. The report is uploaded on Pipeyield's page, never in this chat.
 
 ## Steps
 
@@ -20,6 +20,6 @@ Pipeyield reads a Google Ads search terms report and sorts the searches with the
 ## Rules
 
 - Never ask the user to paste or attach the report in the chat, and never pass search terms or files to the tools. The file goes only to Pipeyield's page, which runs a robot check.
-- It reads the words people searched and the clicks and conversions in the file. It can't see who became a customer, so check any high-spend row before excluding it. Say so if the user asks.
+- It reads the words, clicks and conversions in the file, not who became a customer, so check high-spend rows before you exclude them. Say so if the user asks.
 - The negatives file for Google Ads Editor is on the review page the user uploaded on; point them there.
-- If the user asks what's kept: Pipeyield keeps the file and the review for 24 hours, or 7 days if they ask for the review by email, and an email address they give on the review page is kept with them for that time.
+- If the user asks what's kept: Pipeyield keeps the file and the review for 24 hours, or 7 days if they ask for the review by email, and then their email address is kept with it for those 7 days.
