@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.pipeyield/search-term-review",
+  "title": "Pipeyield",
+  "description": "Google Ads search terms to negatives you can check, and approve",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeyield.com/review?utm_source=mcp-registry&utm_medium=listing",
+  "repository": {
+    "url": "https://github.com/Pipeyield/pipeyield-review",
+    "source": "github",
+    "id": "1459276626"
+  },
+  "icons": [
+    {
+      "src": "https://pipeyield.com/assets/icon-512.png",
+      "mimeType": "image/png"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.pipeyield.com/mcp"
+    }
+  ]
+}
