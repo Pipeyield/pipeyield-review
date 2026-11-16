@@ -50,7 +50,7 @@ It reads the words people searched and the clicks and conversions in your file. 
 - Only upload data you're allowed to share. Search terms can contain names typed by searchers.
 
 ## Every week, for client accounts (paid)
-Next week, only the new searches: the ones you've excluded or kept don't come back. A short Google Ads script, added once in your manager account or in each account (about 10 minutes), collects the data automatically. The weekly plan covers up to 10 Google Ads accounts and costs $199 a month. Our first 10 customers pay $149 a month, locked for 12 months while they stay subscribed. Tax included. More than 10? Email us. Weekly reviews are opening soon, with a 14-day free trial, no card.
+Next week, only the new searches: the ones you've excluded or kept don't come back. A short Google Ads script, added once in your manager account or in each account in a few guided steps, collects the data automatically. The weekly plan covers up to 10 Google Ads accounts and costs $199 a month. Our first 10 customers pay $149 a month, locked for 12 months while they stay subscribed. Tax included. More than 10? Email us. Weekly reviews are opening soon, with a 14-day free trial, no card.
 
 ## License and feedback
 License: MIT (see [LICENSE](LICENSE)). Issues welcome here, or hello@pipeyield.com.
