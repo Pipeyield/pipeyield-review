@@ -6,7 +6,7 @@ You also get one number first: **about how much a month goes to searches you can
 
 Free, no signup, 3 reviews a month per Google Ads account.
 
-> Example below: our sample review of a made-up HR and payroll software account that sells in the United States (the same one as pipeyield.com/review/sample).
+> Example below: our sample review of a made-up HR and payroll software account that sells in the United States (the same one as [pipeyield.com/review/sample](https://pipeyield.com/review/sample?utm_source=github&utm_medium=repo)).
 
 ```
 About $2,150 a month goes to 75 searches you can exclude:
@@ -32,8 +32,8 @@ One export from Google Ads: **Campaigns → Insights and reports → Search term
 
 ## What you get
 - **The number:** about how much a month goes to searches you can exclude, with the clicks and conversions they got in your file.
-- **Root negatives with match type:** when one word covers several searches, you get the word as a phrase-match negative (`"jobs"` covers 5 searches in the example) instead of a line per search. Single odd searches come as exact match.
-- **A reason for every search,** in plain words: `Wants payroll financing, not payroll software.` When one word covers several searches, the reason quotes it: `Looking for a job, not a supplier ("jobs").`
+- **Negatives ready to paste:** exact for each search, plus a phrase negative when a job, course or piracy word appears in several of them (`"jobs"` covers 5 searches in the example).
+- **A reason for every search,** in plain words: `Wants payroll financing, not payroll software.` When a phrase negative covers several searches, the reason quotes its word: `Looking for a job, not a supplier ("jobs").`
 - **A conflict check:** every negative is checked against the buyer searches in your file and, when your export has the Keyword column, the keywords you bid on. A negative that would block one is left out and shown to you instead.
 - **Buyers to keep:** searches that look like your buyers. We never suggest excluding them.
 - **Check by hand:** searches held back for safety (they converted, name a brand, or match a keyword you bid on) and searches the words alone can't decide. If your export keeps Google's Added/Excluded column, the review leaves out what you've already excluded and never puts what you've added as a keyword in exclude.
