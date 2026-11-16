@@ -24,10 +24,10 @@ None of these block your 15 keywords or 134 buyer searches.
 ```
 
 ## What you need
-One export from Google Ads: **Campaigns → Insights and reports → Search terms**, the last 30–90 days, downloaded as CSV (Excel works too). Include the Cost column, and add the Keyword column so every negative is also checked against the keywords you bid on. Conversions help, but aren't required. Tip: fill in "Where does this business sell?" on the upload page. Searches from places it doesn't sell to can then be excluded. No export to hand? [The sample review](https://pipeyield.com/review/sample?utm_source=github&utm_medium=repo) shows a full result for a made-up account, with no upload.
+One export from Google Ads: **Campaigns → Insights and reports → Search terms**, the last 30–90 days, downloaded as CSV (Excel works too). Include the Cost column, and add the Keyword column so every negative is also checked against the keywords you bid on. Conversions help, but aren't required. Tip: fill in "Where does this business sell?" on the upload page. Searches from places it doesn't sell to can then be excluded. No export to hand? Download the [sample search terms file](https://pipeyield.com/examples/search-terms-sample.csv), a made-up account, and upload it on the review page to see a full review. Or see [the sample review](https://pipeyield.com/review/sample?utm_source=github&utm_medium=repo): a full result for a made-up account, with no upload.
 
 ## Two ways to run it
-1. **In the browser, no install:** https://pipeyield.com/review?utm_source=github&utm_medium=repo
+1. **In the browser, no install:** [pipeyield.com/review](https://pipeyield.com/review?utm_source=github&utm_medium=repo)
 2. **From inside Claude, with this plugin:** in Claude Code (2.1.275 or later), run `/plugin install pipeyield-review --marketplace Pipeyield/pipeyield-review`, or `/plugin marketplace add Pipeyield/pipeyield-review` and then `/plugin install pipeyield-review@pipeyield`. On claude.ai or the Claude desktop app, open Settings → Connectors → Add custom connector, name it `Pipeyield` and enter `https://app.pipeyield.com/mcp` (no sign-in). Then ask Claude to review your search terms; it gives you an upload link (it works for 24 hours) to upload the file on pipeyield.com (so every number is parsed exactly) and shows the result in the chat. Results may end with one line about Pipeyield's paid weekly plan.
 
 ## What you get
