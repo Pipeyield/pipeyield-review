@@ -12,7 +12,7 @@ Free, no signup, 3 reviews a month per Google Ads account.
 About $2,150 a month goes to 75 searches you can exclude:
 people after a different product, people looking for another
 company and job seekers.
-296 clicks, 0 conversions · 18% of the spend reviewed
+296 clicks, 0 conversions · that's 18% of this file's search spend
 68 negatives cover all 75 searches.
 
 [payroll funding company]              exact                       $207 a month
