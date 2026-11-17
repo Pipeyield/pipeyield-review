@@ -1,5 +1,7 @@
 # Pipeyield: free Google Ads search-term review
 
+**Free review in your browser, no install: [pipeyield.com/review](https://pipeyield.com/review?utm_source=github&utm_medium=readme)**
+
 Upload one Google Ads search terms export. Every search you could exclude comes with its reason, so you can check it against the calls you've already made. Nothing changes in your account until you add the negatives yourself: you approve every change.
 
 You also get one number first: **about how much a month goes to searches you can exclude**.
@@ -30,6 +32,19 @@ One export from Google Ads: **Campaigns → Insights and reports → Search term
 1. **In the browser, no install:** [pipeyield.com/review](https://pipeyield.com/review?utm_source=github&utm_medium=repo)
 2. **From inside Claude, with this plugin:** in Claude Code (2.1.275 or later), run `/plugin install pipeyield-review --marketplace Pipeyield/pipeyield-review`, or `/plugin marketplace add Pipeyield/pipeyield-review` and then `/plugin install pipeyield-review@pipeyield`. On claude.ai or the Claude desktop app, open Settings → Connectors → Add custom connector, name it `Pipeyield` and enter `https://app.pipeyield.com/mcp` (no sign-in). Then ask Claude to review your search terms; it gives you an upload link (it works for 24 hours) to upload the file on pipeyield.com (so every number is parsed exactly) and shows the result in the chat. Results may end with one line about Pipeyield's paid weekly plan.
 
+## Example prompts
+
+1. **`Review my Google Ads search terms with Pipeyield.`**
+   Claude gives you a link. Upload your search terms report on that page (the file never goes through the chat), then tell Claude "It's uploaded", and it shows you the review: about how much a month goes to searches you can exclude, the negatives with a reason for each, the buyer searches to keep, and the ones to check by hand.
+
+2. **`It's uploaded. Just give me the negatives to paste.`**
+   Claude fetches the short version of your review: the headline and the negatives list, ready to paste into Google Ads.
+
+3. **`Which of these should I check before adding them, and why?`**
+   Claude goes through the searches your review marked "check by hand", with the reason for each, so you decide before anything is added.
+
+Tip: if the business only sells in some places, fill in "Where does this business sell?" on the upload page, so searches from other places can be excluded.
+
 ## What you get
 - **The number:** about how much a month goes to searches you can exclude, with the clicks and conversions they got in your file.
 - **Root negatives for the usual unwanted words:** when a job, course or piracy word (like `jobs`, `course` or `crack`) is in 2 or more of the searches to exclude, you get that one word as a phrase-match negative (`"jobs"` covers 5 searches in the example). Everything else comes as exact match, one per search.
@@ -37,7 +52,7 @@ One export from Google Ads: **Campaigns → Insights and reports → Search term
 - **A conflict check:** every negative is checked against the buyer searches in your file and, when your export has the Keyword column, the keywords you bid on. A negative that would block one is left out and shown to you instead.
 - **Buyers to keep:** searches that look like your buyers. We never suggest excluding them.
 - **Check by hand:** searches held back for safety (they converted, name a brand, or match a keyword you bid on) and searches the words alone can't decide. If your export keeps Google's Added/Excluded column, the review leaves out what you've already excluded and never puts what you've added as a keyword in exclude.
-- **The download:** a CSV for Google Ads Editor, or copy the list and paste it into a negative keyword list (Tools → Shared library → Exclusion lists → Negative keyword lists). Filter by campaign when the file has several.
+- **The download:** a CSV file, or copy the list and paste it into a negative keyword list (Tools → Shared library → Exclusion lists → Negative keyword lists). Filter by campaign when the file has several.
 - **A business profile you can correct:** what the account sells and where it sells, and the review re-runs with your correction.
 
 ## What it can't tell you
@@ -50,7 +65,7 @@ It reads the words people searched and the clicks and conversions in your file. 
 - Only upload data you're allowed to share. Search terms can contain names typed by searchers.
 
 ## Every week, for client accounts (paid)
-Next week, only the new searches: the ones you've excluded or kept don't come back. A short Google Ads script, added once in your manager account or in each account in a few guided steps, collects the data automatically. The weekly plan covers up to 10 Google Ads accounts. $149 a month for our first 10 customers, locked for 12 months while you stay subscribed (list $199). Tax included. More than 10? Email us. Weekly reviews are opening soon, with a 14-day free trial, no card.
+Next week, only the new searches: the ones you've excluded or kept don't come back. A short Google Ads script, added once in your manager account or in each account in a few guided steps, collects the data automatically. The weekly plan covers up to 10 Google Ads accounts. $149 a month for our first 10 customers, locked for 12 months while you stay subscribed (list $199). Tax included. More than 10? Email us. Start a 14-day free trial, no card.
 
 ## License and feedback
 License: MIT (see [LICENSE](LICENSE)). Issues welcome here, or hello@pipeyield.com.
