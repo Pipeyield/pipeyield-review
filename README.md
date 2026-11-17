@@ -32,7 +32,7 @@ One export from Google Ads: **Campaigns → Insights and reports → Search term
 
 ## What you get
 - **The number:** about how much a month goes to searches you can exclude, with the clicks and conversions they got in your file.
-- **Negatives ready to paste:** exact for each search, plus a phrase negative when a job, course or piracy word appears in several of them (`"jobs"` covers 5 searches in the example).
+- **Root negatives for the usual unwanted words:** when a job, course or piracy word (like `jobs`, `course` or `crack`) is in 2 or more of the searches to exclude, you get that one word as a phrase-match negative (`"jobs"` covers 5 searches in the example). Everything else comes as exact match, one per search.
 - **A reason for every search,** in plain words: `Wants payroll financing, not payroll software.` When a phrase negative covers several searches, the reason quotes its word: `Looking for a job, not a supplier ("jobs").`
 - **A conflict check:** every negative is checked against the buyer searches in your file and, when your export has the Keyword column, the keywords you bid on. A negative that would block one is left out and shown to you instead.
 - **Buyers to keep:** searches that look like your buyers. We never suggest excluding them.
@@ -50,7 +50,7 @@ It reads the words people searched and the clicks and conversions in your file. 
 - Only upload data you're allowed to share. Search terms can contain names typed by searchers.
 
 ## Every week, for client accounts (paid)
-Next week, only the new searches: the ones you've excluded or kept don't come back. A short Google Ads script, added once in your manager account or in each account in a few guided steps, collects the data automatically. The weekly plan covers up to 10 Google Ads accounts and costs $199 a month. Our first 10 customers pay $149 a month, locked for 12 months while they stay subscribed. Tax included. More than 10? Email us. Weekly reviews are opening soon, with a 14-day free trial, no card.
+Next week, only the new searches: the ones you've excluded or kept don't come back. A short Google Ads script, added once in your manager account or in each account in a few guided steps, collects the data automatically. The weekly plan covers up to 10 Google Ads accounts. $149 a month for our first 10 customers, locked for 12 months while you stay subscribed (list $199). Tax included. More than 10? Email us. Weekly reviews are opening soon, with a 14-day free trial, no card.
 
 ## License and feedback
 License: MIT (see [LICENSE](LICENSE)). Issues welcome here, or hello@pipeyield.com.
