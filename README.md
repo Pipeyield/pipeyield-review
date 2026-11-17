@@ -24,7 +24,7 @@ None of these block your 15 keywords or 134 buyer searches.
 ```
 
 ## What you need
-One export from Google Ads: **Campaigns → Insights and reports → Search terms**, the last 30–90 days, downloaded as CSV (Excel works too). Include the Cost column, and add the Keyword column so every negative is also checked against the keywords you bid on. Conversions help, but aren't required. Tip: fill in "Where does this business sell?" on the upload page. Searches from places it doesn't sell to can then be excluded. No export to hand? Download the [sample search terms file](https://pipeyield.com/examples/search-terms-sample.csv), a made-up account, and upload it on the review page to see a full review. Or see [the sample review](https://pipeyield.com/review/sample?utm_source=github&utm_medium=repo): a full result for a made-up account, with no upload.
+One export from Google Ads: **Campaigns → Insights and reports → Search terms**, the last 90 days, downloaded as CSV (Excel works too). Include the Cost column, and add the Keyword column so every negative is also checked against the keywords you bid on. Conversions help, but aren't required. Tip: fill in "Where does this business sell?" on the upload page. Searches from places it doesn't sell to can then be excluded. No export to hand? Download the [sample search terms file](https://pipeyield.com/examples/search-terms-sample.csv), a made-up account, and upload it on the review page to see a full review. Or see [the sample review](https://pipeyield.com/review/sample?utm_source=github&utm_medium=repo): a full result for a made-up account, with no upload.
 
 ## Two ways to run it
 1. **In the browser, no install:** [pipeyield.com/review](https://pipeyield.com/review?utm_source=github&utm_medium=repo)
