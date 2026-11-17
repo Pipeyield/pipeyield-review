@@ -1,8 +1,8 @@
 {
   "name": "pipeyield-review",
   "displayName": "Pipeyield search-term review",
-  "version": "0.1.0",
-  "description": "A free Google Ads search-term review by Pipeyield: the searches to exclude, each with its reason, and negatives ready to paste. You upload the report on Pipeyield's page; it never goes through the chat. Results may end with one line about Pipeyield's paid weekly plan.",
+  "version": "0.1.1",
+  "description": "A free Google Ads search-term review by Pipeyield: the searches to exclude, each with its reason, and negatives ready to paste. You upload the report on Pipeyield's page; it never goes through the chat. Each result may end with one line about Pipeyield's paid weekly plan.",
   "author": {
     "name": "Pipeyield",
     "url": "https://pipeyield.com"
@@ -10,9 +10,10 @@
   "homepage": "https://pipeyield.com",
   "repository": "https://github.com/Pipeyield/pipeyield-review",
   "license": "MIT",
+  "icon": "./icon.png",
   "privacyPolicyUrl": "https://pipeyield.com/privacy",
   "termsOfServiceUrl": "https://pipeyield.com/terms",
-  "supportUrl": "mailto:hello@pipeyield.com",
+  "supportUrl": "https://github.com/Pipeyield/pipeyield-review/issues",
   "documentationUrl": "https://github.com/Pipeyield/pipeyield-review#readme",
   "keywords": ["google-ads", "search-terms", "negative-keywords", "ppc", "marketing"]
 }
