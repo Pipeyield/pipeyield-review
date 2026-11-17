@@ -46,7 +46,7 @@ It reads the words people searched and the clicks and conversions in your file. 
 ## Your data
 - The file is uploaded to our server over HTTPS and reviewed there. This repo holds only the plugin client, which never connects to your Google Ads account.
 - The file and its review are deleted within 24 hours, or within 7 days if you ask us to email the review. If you ask us to email you the review, your email address is kept with it for those 7 days. Data is stored in Germany (AWS Frankfurt); search terms are labelled with an AI model from Anthropic, as listed in the privacy policy: https://pipeyield.com/privacy
-- The review's AI step uses Anthropic's Claude on text only: the search terms, campaign names and keywords, plus where you sell if you type it, never spend or other figures. Anthropic never uses it for training, and keeps it for up to 30 days for safety checks only, then deletes it.
+- The review's AI step uses Anthropic's Claude on text only: the search terms, campaign names and keywords, and a short description of the business built from them, plus where you sell if you type it, never spend or other figures. Anthropic never uses it for training, and keeps it for up to 30 days for safety checks only, then deletes it.
 - Only upload data you're allowed to share. Search terms can contain names typed by searchers.
 
 ## Every week, for client accounts (paid)
