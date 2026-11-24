@@ -11,11 +11,11 @@ Free, no signup, 3 reviews a month per Google Ads account.
 > Example below: our sample review of a made-up HR and payroll software account that sells in the United States (the same one as [pipeyield.com/review/sample](https://pipeyield.com/review/sample?utm_source=github&utm_medium=repo)).
 
 ```
-About $2,150 a month goes to 75 searches you can exclude:
+About $2,050 a month goes to 70 searches you can exclude:
 people after a different product, people looking for another
 company and job seekers.
-296 clicks, 0 conversions · that's 18% of this file's search spend
-68 negatives cover all 75 searches.
+279 clicks, 0 conversions · 17% of this file's search spend
+63 negatives cover all 70 searches.
 
 [payroll funding company]              exact                       $207 a month
 [payroll direct deposit not received]  exact                       $140 a month
@@ -30,7 +30,7 @@ One export from Google Ads: **Campaigns → Insights and reports → Search term
 
 ## Two ways to run it
 1. **In the browser, no install:** [pipeyield.com/review](https://pipeyield.com/review?utm_source=github&utm_medium=repo)
-2. **From inside Claude, with this plugin:** in Claude Code (2.1.275 or later), run `/plugin install pipeyield-review --marketplace Pipeyield/pipeyield-review`, or `/plugin marketplace add Pipeyield/pipeyield-review` and then `/plugin install pipeyield-review@pipeyield`. On claude.ai or the Claude desktop app, open Settings → Connectors → Add custom connector, name it `Pipeyield` and enter `https://app.pipeyield.com/mcp` (no sign-in). Then ask Claude to review your search terms; it gives you an upload link (it works for 24 hours) to upload the file on pipeyield.com (so every number is parsed exactly) and shows the result in the chat. Results may end with one line about Pipeyield's paid weekly plan.
+2. **From inside Claude, with this plugin:** in Claude Code (2.1.275 or later), run `/plugin install pipeyield-review --marketplace Pipeyield/pipeyield-review`, or `/plugin marketplace add Pipeyield/pipeyield-review` and then `/plugin install pipeyield-review@pipeyield`. On claude.ai or the Claude desktop app, open Settings → Connectors → Add custom connector, name it `Pipeyield` and enter `https://app.pipeyield.com/mcp` (no sign-in). Then ask Claude to review your search terms; it gives you an upload link (it works for 24 hours). Upload the export on Pipeyield's page. Pipeyield reads the cost figures from the file and calculates the totals. The result shows in the chat. Results may end with one line about Pipeyield's paid weekly plan.
 
 ## Example prompts
 
@@ -41,7 +41,7 @@ One export from Google Ads: **Campaigns → Insights and reports → Search term
    Claude fetches the short version of your review: the headline and the negatives list, ready to paste into Google Ads.
 
 3. **`Which of these should I check before adding them, and why?`**
-   Claude goes through the searches your review marked "check by hand", with the reason for each, so you decide before anything is added.
+   The standard chat result explains up to three searches marked 'check by hand'. Open the browser review for the full list.
 
 Tip: if the business only sells in some places, fill in "Where does this business sell?" on the upload page, so searches from other places can be excluded.
 
@@ -61,11 +61,11 @@ It reads the words people searched and the clicks and conversions in your file. 
 ## Your data
 - The file is uploaded to our server over HTTPS and reviewed there. This repo holds only the plugin client, which never connects to your Google Ads account.
 - The file and its review are deleted within 24 hours, or within 7 days if you ask us to email the review. If you ask us to email you the review, your email address is kept with it for those 7 days. Data is stored in Germany (AWS Frankfurt); search terms are labelled with an AI model from Anthropic, as listed in the privacy policy: https://pipeyield.com/privacy
-- The review's AI step uses Anthropic's Claude on text only: the search terms, campaign names and keywords, and a short description of the business built from them, plus where you sell if you type it, never spend or other figures. Anthropic never uses it for training, and keeps it for up to 30 days for safety checks only, then deletes it.
+- The review's AI step uses Anthropic's Claude on text only: the search terms, campaign names and keywords, and a short description of the business built from them, plus where you sell if you type it, never spend or other figures. Anthropic may not train on this data. It deletes inputs and outputs within 30 days unless it retains flagged data for policy enforcement for up to two years or the law requires longer retention.
 - Only upload data you're allowed to share. Search terms can contain names typed by searchers.
 
 ## Every week, for client accounts (paid)
-Next week, only the new searches: the ones you've excluded or kept don't come back. A short Google Ads script, added once in your manager account or in each account in a few guided steps, collects the data automatically. The weekly plan covers up to 10 Google Ads accounts. $149 a month for our first 10 customers, locked for 12 months while you stay subscribed (list $199). Tax included. More than 10? Email us. Start a 14-day free trial, no card.
+Weekly reviews can include undecided searches again. An excluded search can return if it spends again. A kept search can return if its spend rises by more than 50% or it records new conversions. A short Google Ads script, added once in your manager account or in each account in a few guided steps, collects the data automatically. The weekly plan covers up to 10 Google Ads accounts. $149 a month for our first 10 customers, locked for 12 months while you stay subscribed (list $199). Tax included. More than 10? Email us. Start a 14-day free trial, no card.
 
 ## License and feedback
 License: MIT (see [LICENSE](LICENSE)). Issues welcome here, or hello@pipeyield.com.
