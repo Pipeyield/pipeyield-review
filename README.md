@@ -6,7 +6,7 @@ Upload one Google Ads search terms export. Every search you could exclude comes 
 
 You also get one number first: **about how much a month goes to searches you can exclude**.
 
-Free, no signup, 3 reviews a month per Google Ads account.
+Upload without signing up.
 
 > Example below: our sample review of a made-up HR and payroll software account that sells in the United States (the same one as [pipeyield.com/review/sample](https://pipeyield.com/review/sample?utm_source=github&utm_medium=repo)).
 
@@ -35,13 +35,13 @@ One export from Google Ads: **Campaigns → Insights and reports → Search term
 ## Example prompts
 
 1. **`Review my Google Ads search terms with Pipeyield.`**
-   Claude gives you a link. Upload your search terms report on that page (the file never goes through the chat), then tell Claude "It's uploaded", and it shows you the review: about how much a month goes to searches you can exclude, the negatives with a reason for each, the buyer searches to keep, and the ones to check by hand.
+   Claude gives you a link. Upload your search terms report on that page (the file never goes through the chat), then tell Claude "It's uploaded", and it shows you the review: about how much a month goes to searches you can exclude, the negatives to paste, the buyer searches to keep, and the ones to check by hand.
 
 2. **`It's uploaded. Just give me the negatives to paste.`**
    Claude fetches the short version of your review: the headline and the negatives list, ready to paste into Google Ads.
 
 3. **`Which of these should I check before adding them, and why?`**
-   The standard chat result explains up to three searches marked 'check by hand'. Open the browser review for the full list.
+   The standard chat result estimates monthly spend on possible exclusions, lists the negatives to paste and explains up to five suggestions. The browser review explains every suggested exclusion.
 
 Tip: if the business only sells in some places, fill in "Where does this business sell?" on the upload page, so searches from other places can be excluded.
 
