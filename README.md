@@ -4,7 +4,7 @@
 
 Upload one Google Ads search terms export. Every search you could exclude comes with its reason, so you can check it against the calls you've already made. Nothing changes in your account until you add the negatives yourself: you approve every change.
 
-You also get one number first: **about how much a month goes to searches you can exclude**.
+You also get one number first: **about how much goes to searches you can exclude**.
 
 Upload without signing up.
 
@@ -35,7 +35,7 @@ One export from Google Ads: **Campaigns → Insights and reports → Search term
 ## Example prompts
 
 1. **`Review my Google Ads search terms with Pipeyield.`**
-   Claude gives you a link. Upload your search terms report on that page (the file never goes through the chat), then tell Claude "It's uploaded", and it shows you the review: about how much a month goes to searches you can exclude, the negatives to paste, the buyer searches to keep, and the ones to check by hand.
+   Claude gives you a link. Upload your search terms report on that page (the file never goes through the chat), then tell Claude "It's uploaded", and it shows you the review: about how much goes to searches you can exclude, the negatives to paste, the buyer searches to keep, and the ones to check by hand.
 
 2. **`It's uploaded. Just give me the negatives to paste.`**
    Claude fetches the short version of your review: the headline and the negatives list, ready to paste into Google Ads.
@@ -46,7 +46,7 @@ One export from Google Ads: **Campaigns → Insights and reports → Search term
 Tip: if the business only sells in some places, fill in "Where does this business sell?" on the upload page, so searches from other places can be excluded.
 
 ## What you get
-- **The number:** about how much a month goes to searches you can exclude, with the clicks and conversions they got in your file.
+- **The number:** about how much goes to searches you can exclude, with the clicks and conversions they got in your file.
 - **Root negatives for the usual unwanted words:** when a job, course or piracy word (like `jobs`, `course` or `crack`) is in 2 or more of the searches to exclude, you get that one word as a phrase-match negative (`"jobs"` covers 5 searches in the example). Everything else comes as exact match, one per search.
 - **A reason for every search,** in plain words: `Wants payroll financing, not payroll software.` When a phrase negative covers several searches, the reason quotes its word: `Looking for a job, not a supplier ("jobs").`
 - **A conflict check:** every negative is checked against the buyer searches in your file and, when your export has the Keyword column, the keywords you bid on. A negative that would block one is left out and shown to you instead.
